@@ -15,7 +15,7 @@ Clone the project
 Go to the project root directory
 
 ```bash
-  cd WHATSAPP-CLONE-MASTER
+  cd chat-app
 ```
 
 Install dependencies
