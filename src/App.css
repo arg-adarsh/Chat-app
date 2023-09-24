@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #dadbd3;
+}
+
+.app__body {
+  display: flex;
+  background-color: #ededed;
+  height: 90vh;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 9px 3px rgb(148, 146, 146);
+  width: 90vw;
+}
+
+/* DARK-MODE STYLES */
+
+.dark-mode1 {
+  background-color: #3D3D3D !important;
+  color: #f6f6f6 !important;
+  border-color: #212121 !important;
+}
+
+.dark-mode2 {
+  background-color: #212121 !important;
+  color: #f6f6f6 !important;
+  border-color: #3D3D3D !important;
+}
+
+.dark-border1 {
+  border-color: #3D3D3D !important;
+}
+
+.dark-modeHover:hover {
+  background-color: #3D3D3D !important;
+}
+
+.dark-mode-bgImg {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/whatsappclone-f6d9e.appspot.com/o/dark.jpg?alt=media&token=4901e413-3899-475a-99d1-47833163e36f") !important;
+}
+
+.dark-mode-color1 {
+  color: #f6f6f6 !important;
+}
+
+.dark-mode-color2 {
+  color: black !important;
+}
+
+.dark-mode-color3 {
+  color: rgba(201 201 201) !important;
+}
+
+.dark-mode-bgImg::-webkit-scrollbar-thumb {
+  background: #f6f6f6 !important;
+}
+
+.dark-mode2::-webkit-scrollbar-thumb {
+  background: #f6f6f6 !important;
+}
+
+.dark-mode1::-webkit-scrollbar-thumb {
+  background: #f6f6f6 !important;
+}
+
+
+
+
+
+@media(min-width: 767px) {
+  .app:before {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #009688;
+    width: 100%;
+    height: 127px;
+    content: "";
+  }
+
+  .app.dark-mode1:before {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: #212121 !important;
+    width: 100%;
+    height: 127px;
+    content: "";
+  }
+}

@@ -1,0 +1,164 @@
+.sidebarConvoWr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebarConvoWr.current {
+    background-color: #ebebebb2;
+}
+
+.sidebarConvoWr.current.dark-modeHover {
+    background-color: #3d3d3d !important;
+}
+
+
+.sidebarConvo {
+    display: flex;
+    flex: 1;
+    position: relative;
+    padding: 1em;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    border-color: #f6f6f6;
+}
+
+
+
+.sidebarConvoWr>p {
+    display: none;
+    background-color: #06D755;
+    color: white;
+    font-size: x-small;
+    height: max-content;
+    width: max-content;
+    padding: .5em .8em;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.sidebarConvoWr>p.show {
+    display: flex;
+}
+
+.sidebarConvoWr>p.roomRead {
+    padding: 7px 7px;
+}
+
+.sidebarConvoWr:hover {
+    background-color: #ebebebb2;
+}
+
+
+.sidebarConvo__info>h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: lighter;
+}
+
+.sidebarConvo__info {
+    margin-left: .5em;
+}
+
+.sidebarConvo__info>div {
+    font-size: small;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    color: inherit;
+    align-items: center;
+    position: relative;
+}
+
+.sidebarConvo__info>div>span {
+    width: 100%;
+    max-width: 151px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebarConvo__info>div.dark {
+    color: white;
+}
+
+.sidebarConvo__info>.typing {
+    color: #06D755;
+}
+
+.sidebarConvo__info>div>.check {
+    margin-right: .3em;
+}
+
+.sidebarConvo__info>div>.check.read .checkIcon {
+    color: #55ADEE;
+}
+
+.sidebarConvo__info>div .MuiSvgIcon-root {
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.sidebarConvo__info>div .mic {
+    color: rgb(52, 146, 184);
+}
+
+.sidebarConvo__info>div .video {
+    color: rgb(226, 8, 8);
+}
+
+.sidebarConvo__info>div .checkIcon {
+    width: 15px;
+    height: 15px;
+    color: #80808080;
+}
+
+.sidebarConvo__info>div .checkIcon:nth-child(2) {
+    position: absolute;
+    left: 4px;
+}
+
+.sidebarConvo__add {
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    border-color: #f6f6f6;
+}
+
+
+
+.sidebarConvo__addChat {
+    text-align: center;
+    padding: .5em;
+    flex: 1
+}
+
+.sidebarConvo__addRoom {
+    border-left: 1px solid;
+    padding: .5em;
+    text-align: center;
+    flex: 1;
+    border-color: #f6f6f6;
+}
+
+
+
+.sidebarConvo__addRoom:hover,
+.sidebarConvo__addChat:hover {
+    background-color: #ebebeb;
+}
+
+.sidebarConvoWr>.MuiSvgIcon-root {
+    color: rgba(128, 128, 128, 0.541);
+    display: none;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.sidebarConvoWr:hover>.MuiSvgIcon-root {
+    display: inline-block;
+}

@@ -1,0 +1,313 @@
+.chat {
+    width: 65%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__header {
+    position: relative;
+    z-index: 1;
+}
+
+.chat__headerSearch {
+    display: none;
+    transform: translateY(-200%);
+    opacity: 0;
+    align-items: center;
+}
+
+.chat__headerSearch>input {
+    flex: 1;
+    outline: none;
+    padding: 1em;
+    border: none;
+}
+
+.chat__headerSearch .helpIcon {
+    font-size: .9rem;
+    cursor: pointer;
+    color: #e20000;
+    margin: 0 .5em;
+}
+
+.chat__headerSearch .searchIcon {
+    margin: 0 .5em;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.chat__headerSearch p {
+    margin-right: .5em;
+    cursor: pointer;
+}
+
+.chat__headerSearch>div {
+    position: relative;
+}
+
+.chat__headerSearch>div>small {
+    display: none;
+    position: absolute;
+    width: max-content;
+    top: 80%;
+    font-size: xx-small;
+    color: white;
+    border-radius: 5px;
+    padding: 1px;
+    background-color: #dc0000;
+    left: 10%
+}
+
+.chat__headerSearch .helpIcon:hover+small {
+    display: block;
+}
+
+.chat__headerWr {
+    padding: 1em;
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.chat__headerWr .MuiAvatar-root {
+    cursor: pointer;
+}
+
+.chat__headerInfo {
+    flex: 1;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.chat__headerInfo>h3 {
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.chat__headerInfo>p {
+    color: grey;
+    font-size: small;
+}
+
+.chat__headerRight {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
+
+.chat__headerRight>.MuiButtonBase-root {
+    position: relative;
+}
+
+.chat__headerRight>div {
+    position: relative;
+}
+
+.chatHeaderHelp {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+    right: 28%;
+    width: max-content;
+    flex-direction: column;
+    box-shadow: 1px 1px 9px grey;
+    border-radius: 5px;
+}
+
+.chatHeaderHelp>ul {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    list-style: none;
+    align-items: flex-start;
+    background-color: white;
+    font-size: .9rem;
+}
+
+.chatHeaderHelp>ul li {
+    color: inherit;
+    width: 100%;
+    cursor: pointer;
+    padding: 1.1em 4.5em .9em 1.1em;
+}
+
+.chatHeaderHelp>ul li:hover {
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.chat__attachfile {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.chat__headerWr>.MuiButtonBase-root {
+    display: none;
+}
+
+.chat__body {
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    flex: 1;
+    background-color: white;
+    position: relative;
+    padding: 1em;
+    background-repeat: repeat;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.chat__body::-webkit-scrollbar {
+    width: .5em;
+}
+
+.chat__body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+}
+
+.chat__body::-webkit-scrollbar-thumb {
+    background: rgba(73, 72, 72, 0.466);
+}
+
+.chatBody__loading {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.chat__footer.searching {
+    justify-content: space-around;
+    align-items: initial;
+}
+
+.chat__footerSearchNav {
+    display: flex;
+    align-items: center;
+}
+
+.chat__footerSearchNav .MuiButtonBase-root {
+    background-color: skyblue;
+    margin-left: .3em;
+}
+
+.chat__footerSearchDetails {
+    display: grid;
+    place-items: center;
+}
+
+.chat__footer.blocked {
+    justify-content: center;
+}
+
+.chat__footer.blocked p {
+    color: grey;
+    font-size: small;
+}
+
+.chat__footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededed;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgrey;
+}
+
+.chat__footer>form {
+    flex: 1;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.chat__footer>form>input {
+    flex: 1;
+    border-radius: 30px;
+    outline: none;
+    padding: .8em;
+    border: none;
+}
+
+.chat__footer>form>button {
+    display: none;
+}
+
+.footer__emoji {
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.footer__emoji.hide,
+.chat__footer>form.hide {
+    width: 0;
+    display: none;
+}
+
+.footer__emojiIcon,
+.chat_footerSendIcon {
+    margin: 0 .5em;
+}
+
+.footer__emojiIcon,
+.micIcon {
+    color: rgb(80, 78, 78);
+}
+
+.chat_footerSendIcon {
+    color: rgb(62, 174, 218);
+}
+
+.footer__emoji>.emoji-picker-react {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 115%;
+    max-height: 251px;
+    max-width: 231px
+}
+
+.chat__filePreview {
+    position: absolute;
+    display: none;
+    transition: all 1s ease-in-out;
+    top: 110%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    opacity: 1;
+}
+
+
+@media(max-width: 840px) {
+
+    /* MOBILE STYLES */
+    .chat {
+        position: absolute;
+        box-shadow: 1px 1px 1px 1px rgb(148, 146, 146);
+        width: 100%;
+        left: 110%;
+        z-index: 1;
+        height: 100%;
+    }
+
+    .chat__headerWr>.MuiButtonBase-root {
+        display: inline-flex;
+        padding: 6px;
+        margin-left: -15px;
+    }
+
+
+}
+
+@media(max-width: 321px) {
+    .chat__headerSearch>input {
+        width: 50px;
+    }
+}

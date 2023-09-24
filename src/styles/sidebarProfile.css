@@ -1,0 +1,322 @@
+.sidebarProfile {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    right: 100%;
+    top: 0;
+    background-color: #EDEDED;
+}
+
+.sidebarProfile__header {
+    background-color: #00BFA5;
+    display: flex;
+    padding: 0 0 1em 1em;
+    height: 80px;
+    align-items: flex-end;
+    color: white
+}
+
+.sidebarProfile__header>div {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarProfile__header>div .MuiSvgIcon-root {
+    cursor: pointer;
+}
+
+.sidebarProfile__header>div p {
+    margin-left: 1.3em;
+    font-weight: 700;
+}
+
+.sidebarProfile__body {
+    background-color: #EDEDED;
+    padding-top: 2em;
+    max-height: 84%;
+    overflow-y: scroll;
+}
+
+.sidebarProfile__body::-webkit-scrollbar {
+    width: .5em;
+}
+
+.sidebarProfile__body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
+}
+
+.sidebarProfile__body::-webkit-scrollbar-thumb {
+    background: rgba(73, 72, 72, 0.466);
+}
+
+.sidebarProfile__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sidebarProfile__avatar .MuiAvatar-root {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.sidebarProfile__avatar>input {
+    position: absolute;
+    height: 95%;
+    width: 60%;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.sidebarProfile__avatar input:hover+.sidebarProfile__avatar_change {
+    opacity: 1;
+    background-color: #808080a8;
+}
+
+.sidebarProfile__avatar_change {
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+}
+
+
+.sidebarProfile__avatar_change p,
+.sidebarProfile__avatar_change .MuiSvgIcon-root {
+    color: white;
+}
+
+.sidebarProfileAvatar__loading {
+    position: absolute;
+}
+
+/* SECTION 2 */
+
+.sidebarProfile__sec2_wr {
+    background-color: white;
+    margin-top: 2em;
+    padding: 1em;
+    opacity: 0;
+    position: relative;
+    bottom: 15px;
+}
+
+.sidebarProfile__sec2_wr>p {
+    color: #00BFA5;
+    margin-bottom: 1.5em;
+    font-size: .9rem;
+}
+
+.sidebarProfile__sec2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebarProfile__sec2 .MuiSvgIcon-root.hide {
+    display: none;
+}
+
+.sidebarProfile__sec2 .MuiSvgIcon-root {
+    color: grey;
+    cursor: pointer;
+}
+
+.sidebarProfile__editName {
+    flex: 1;
+}
+
+.sidebarProfile__editName>div {
+    position: relative;
+}
+
+.sidebarProfile__editName>div .MuiSvgIcon-root.done {
+    color: grey;
+}
+
+.sidebarProfile__editName input {
+    outline: none;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    border-bottom: 2px solid #00BFA5;
+}
+
+.sidebarProfile__editNameIconWr {
+    display: flex;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    align-items: center;
+    margin-top: 0 !important;
+}
+
+.sidebarProfile__editNameIconWr p {
+    font-size: small !important;
+    color: grey;
+    margin-top: 0 !important;
+}
+
+.sidebarProfile__editName__emoji {
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin: 0 .4em !important;
+}
+
+.sidebarProfile__editName__emoji>.emoji-picker-react {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 115%;
+    right: 0;
+    max-height: 251px;
+    max-width: 231px
+}
+
+.sp__editName__emoji {
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin: 0 .4em !important;
+}
+
+.sp__editName__emoji>.emoji-picker-react {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 115%;
+    right: 0;
+    max-height: 251px;
+    max-width: 231px
+}
+
+/* SECTION 3 */
+
+.sidebarProfile__sec3_wr {
+    padding: 2em 1em;
+    opacity: 0;
+    position: relative;
+    bottom: 15px;
+}
+
+.sidebarProfile__sec3_wr>p {
+    font-size: .8rem;
+    color: rgba(128, 128, 128, 0.733);
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+/* SECTION 4 */
+
+.sidebarProfile__sec4_wr {
+    background-color: white;
+    padding: 1em;
+    opacity: 0;
+    position: relative;
+    bottom: 15px;
+}
+
+.sidebarProfile__sec4_wr>p {
+    color: #00BFA5;
+    margin-bottom: 1.5em;
+    font-size: .9rem;
+}
+
+.sidebarProfile__sec4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebarProfile__sec4 .MuiSvgIcon-root.hide {
+    display: none;
+}
+
+.sidebarProfile__sec4 .MuiSvgIcon-root {
+    color: grey;
+    cursor: pointer;
+}
+
+.sidebarProfile__editAbout {
+    flex: 1;
+}
+
+.sidebarProfile__editAbout>span {
+    word-break: break-all;
+}
+
+.sidebarProfile__editAbout>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarProfile__editAbout>div .MuiSvgIcon-root.done {
+    color: grey;
+}
+
+.sidebarProfile__editAbout>div textarea {
+    flex: .7 1;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #00BFA5;
+}
+
+
+.sidebarProfile__editAboutIconWr {
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+    margin-top: 0 !important;
+}
+
+.sidebarProfile__editAboutIconWr p {
+    font-size: small !important;
+    color: grey;
+    margin-top: 0 !important;
+}
+
+.sidebarProfile__editAbout__emoji {
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin: 0 .4em !important;
+}
+
+.sidebarProfile__editAbout__emoji>.emoji-picker-react {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 115%;
+    right: 0;
+    max-height: 251px;
+    max-width: 231px
+}
+
+.sp__editAbout__emoji {
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin: 0 .4em !important;
+}
+
+.sp__editAbout__emoji>.emoji-picker-react {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    bottom: 115%;
+    right: 0;
+    max-height: 251px;
+    max-width: 231px
+}
