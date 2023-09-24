@@ -7,7 +7,7 @@ This is a WhatsApp Web Clone that was created with React (FrontEnd) and Firebase
 Clone the project
 
 ```bash
-  git clone https://github.com/DevYemi/Whatsapp-Clone
+  git clone
 ```
 
 Go to the project root directory
@@ -38,9 +38,4 @@ Start the server
 
 ## Appendix
 
-This Project has been hosted and you can view it by clicking [Here](https://whatsappclone-f6d9e.web.app)
-
-## Acknowledgements
-
-- [Clever Programmer Youtube Channel](https://www.youtube.com/c/CleverProgrammer)
-- [SonnySangha Youtube Channel](https://www.youtube.com/c/SonnySangha)
+This Project has been hosted and you can view it by clicking [Here](https://async-chats.web.app/)
