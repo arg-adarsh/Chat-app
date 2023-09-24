@@ -2,12 +2,14 @@
 
 This is a WhatsApp Web Clone that was created with React (FrontEnd) and Firebase (Backend).
 
+[Demo](https://async-chats.web.app/)
+
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone
+  git clone https://github.com/arg-adarsh/chat-app
 ```
 
 Go to the project root directory
