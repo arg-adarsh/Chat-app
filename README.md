@@ -9,13 +9,13 @@ This is a WhatsApp Web Clone that was created with React (FrontEnd) and Firebase
 Clone the project
 
 ```bash
-  git clone https://github.com/arg-adarsh/chat-app
+  git clone https://github.com/arg-adarsh/Chat-app
 ```
 
 Go to the project root directory
 
 ```bash
-  cd chat-app
+  cd Chat-app
 ```
 
 Install dependencies
